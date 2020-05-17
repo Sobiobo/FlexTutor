@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>FlexBox Tutorial</title>
+ <link rel="stylesheet" href="./styles.css">
+ <style>
+  .container {
+   /* height: 500px; */
+   display: flex;
+   /* display: inline-flex; */
+   /* flex-direction: row;
+   flex-direction: row-reverse;
+   flex-direction: column;
+   flex-direction: column-reverse; */
+   /* flex-wrap: wrap;
+   align-content: stretch;
+   align-content: flex-end;
+   align-content: flex-start;
+   align-content: center;
+   align-content: space-around;
+   align-content: space-between; */
+   /* justify-content: center;*/
+   /* align-items: flex-end; */
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+  }
+
+  .box {
+   /* grow shrink basis(min-width) */
+   /* flex: 1 0 25%; */
+   flex: 0 0 calc(25% - 1rem);
+  }
+
+  /* .box-5 {
+   align-self: flex-start;
+
+  }
+
+  .box-3 {
+   align-self: stretch;
+  }
+
+  .box-1 {
+   align-self: center;
+  } */
+
+  /* .box-1 {
+   flex-grow: 2;
+  }
+
+  .box-2 {
+   flex-grow: 1;
+  } */
+
+  .container-1 {
+   height: 800px;
+   border: 5px solid blue;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  /* .box-1 {
+   order: 2;
+  }
+
+  .box-5 {
+   order: -2;
+  }
+
+  .box-3 {
+   order: 1;
+  } */
+ </style>
+</head>
+
+<body>
+ <!-- parent = flex-container -->
+ <div class="container">
+  <!-- children = flex-items -->
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <!-- <div class="box box-5">5</div> -->
+  <!-- <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div> -->
+  <!-- </div>
+ <div class="container-1">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+ </div> -->
+  <!-- <a href="banner.html">banner html</a> -->
+</body>
+
+</html>
